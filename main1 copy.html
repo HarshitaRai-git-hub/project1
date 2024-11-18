@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+        #div1 {
+            margin-top:50px ;
+            height: 700px;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+
+        }
+        #top {
+            position: fixed;
+            top:0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        #div2 {
+
+            /* margin-left: 50px; */
+            margin-right: 450px;
+
+            /* padding-top: 30px; */
+        }
+
+        .div3 {
+            background-color: rgb(255, 205, 178);
+
+            border-width: 8px;
+            border-style: double;
+            border-radius: 19px;
+            border-color: rgb(243, 150, 100);
+            font-family: cursive;
+            width: 400px;
+            text-align: center;
+            height: 430px;
+            margin: 15px;
+            display: inline-block;
+
+        }
+
+        .div11 {
+            background-color: rgb(245, 115, 68);
+            padding: 6px;
+            width: 100px;
+            margin-left: 140px;
+            margin-top: 15px;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            width: 100px;
+
+        }
+
+        #soap {
+            display: inline-block;
+            height: 490px;
+            /* width: 1000px; */
+            overflow-y: auto;
+            overflow-x: hidden;
+
+        }
+
+
+        video {
+            height: 650px;
+            margin-top: 60px;
+        }
+
+
+
+        .c1 {
+            /* background-color: rgb(75, 75, 75); */
+            text-align: right;
+            border-radius: 10px;
+            color: white;
+
+            padding: 20px;
+        
+
+            text-decoration: none;
+        }
+
+        .c1:active {
+            padding: 20px;
+            background-color: green;
+        }
+
+        .c1:hover {
+            background-color: grey;
+            font-size: 16.8px;
+            transition: 0.6s;
+        }
+
+        #img1 {
+            width: 600px;
+            /* border-radius: 50px; */
+            /* margin-top: 7px; */
+            /* margin-left: 7px; */
+        }
+
+
+
+        .clo1 {
+            background-color: #885134;
+            padding-left: 121.6px;
+            padding-right: 121.6px;
+            color: oldlace;
+            font-family: cursive;
+            border-width: 0%;
+            border-collapse: collapse;
+        }
+
+        /* clothes.................. */
+        #clothes {
+            width: 400px;
+            margin-top: 7px;
+
+        }
+
+        #clothes:hover {
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        #link1 {
+            padding-left: 170px;
+            padding-right: 175px;
+        }
+
+        /* ...............skin care................. */
+        #skincare {
+            /* margin-top: 50px; */
+            width: 400px;
+
+        }
+
+        #skincare:hover {
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        #link2 {
+            padding-left: 167px;
+            padding-right: 161px;
+        }
+
+        /* ...................shoe.................. */
+        #shoe {
+            /* margin-top: 30px; */
+            width: 400px;
+        }
+
+        #shoe:hover {
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        #link3 {
+            padding-left: 167px;
+            padding-right: 163px;
+        }
+
+        /*..............jwell................ */
+        #jwell {
+            /* margin-top: 30px; */
+            width: 400px;
+        }
+
+        #jwell:hover {
+            transform: scale(1.1);
+            transition: 1.5s;
+        }
+
+        #link4 {
+            padding-left: 155px;
+            padding-right: 155px;
+
+        }
+
+        /* last wala part */
+        #insta {
+            margin-top: 500px;
+            /* margin-bottom: 50px; */
+            margin-left: 50px;
+            border-radius: 100%;
+
+        }
+
+        #insta:hover {
+            border: 1px double black;
+            transform: scale(1.1);
+            transition: 1s;
+
+        }
+
+        #last {
+            margin-top: 100px;
+            /* background-color: #DDD2C1; */
+            background-color: #493628;
+        }
+
+        .gridcontainer {
+            margin-top: 60px;
+            margin-left: 250px;
+            display: grid;
+            grid-template-columns: 500px 500px;
+            grid-row-gap: 80px;
+        }
+
+        video {
+            margin-top: 0%;
+            height: 100px;
+        }
+
+
+        .div {
+            margin-top: 10px;
+            background-color: rgb(236, 230, 230);
+            display: grid;
+            grid-template-columns: 500px auto;
+            grid-column-gap: 100px;
+        }
+
+        #divitem1,
+        #divitem2 {
+            margin-top: 30px;
+        }
+
+        #divitem2 {
+            margin-top: 140px;
+        }
+
+        .divv {
+            margin-top: 10px;
+            background-color: rgb(236, 230, 230);
+            display: grid;
+            grid-template-columns: auto 500px;
+            grid-column-gap: 100px;
+        }
+
+        #divvitem1,
+        #divvitem2 {
+            margin-top: 30px;
+        }
+
+        #divvitem2 {
+            margin-left: 10px;
+            margin-top: 140px;
+        }
+
+        #Recommendation {
+            margin-top: 150px;
+        }
+
+
+
+
+        #div2 {
+            /* background-color: #FCF8EC; */
+            display: grid;
+            grid-template-columns: 600px 400px;
+            grid-gap: 250px;
+            background-repeat: repeat-x;
+            
+        }
+
+        #p2 {
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        #link {
+            background-color: black;
+            padding: 20px;
+            border-radius: 7px;
+        }
+
+        /* ...........................................ngo.................................... */
+
+        #ngo{
+            background-image: URL(ngobg.png);
+            background-size: cover;
+            color:#F4EBD0 ;
+            font-family: cursive;
+            height: 700px;
+        }
+        #ngoimg{
+            grid-row: span 2;
+        }
+        .ngolink{
+            color: white;
+            margin-left: 30px;
+          
+            background-color:orangered;  
+            padding: 20px; 
+            border-radius: 200px;   
+        }
+       
+         
+
+        #p1{
+            padding-top: 100px;
+        }
+        #y{
+            margin-top: 200px;
+            margin-left: 20px;
+        }
+        textarea{
+           
+            margin-left: 20px;
+           
+            width:1400px;
+            height: 500px;
+        }
+        input{
+            color: white;
+            border-radius: 30px;
+            border: white 2px solid;
+            background-color: green;
+            margin-left: 20px;
+            padding-left: 700px;
+            padding-right: 645px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <DIV id="div1">
+        <div id="top">
+            <div id="link">
+                <a href="main1.html"  id="h1" class="c1">Home</a>
+                <a href="about.html"  id="h2" class="c1"> About</a>
+                <a href="ngo.html"  id="h3" class="c1">NGOs</a>
+                <a href="#last"  id="h4" class="c1">FAQs</a>
+                <a href="#last"  id="h4" class="c1">CONNECT</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div id="div2">
+            <div id="p1">
+                <center>
+                <p style="font-size: 50px;"> "Eco-friendly products, ethically sourced and sustainably made. Join the movement for a greener planet!"</p> <br>
+                <a href="#clothes" style="color: black;" class="top1">Start Shopping</a> <br>
+                <a href=""  style="color: black;"  class="top1">Learn More About Our Mission</a>
+            </center>
+            </div>
+            <div id="p2">
+                <img src="s.png" alt="" height="600px">
+            </div>
+
+
+        </div>
+
+
+    </DIV>
+
+
+
+
+
+
+
+
+    <!----------------------------------products------------------------------------>
+    <h1>Discover Eco Friendly Essentials</h1>
+    <div class="gridcontainer">
+
+        <div id="clothes">
+            <img src="clothes.png" alt="" id="imgc" height="400" width="400" class="griditem"> <br>
+            <a href="clothes.html" class="clo1" id="link1">Fashion</a>
+        </div>
+        <div id="skincare">
+            <img src="skin care.png" alt="" id="imgc" height="400" width="400" class="griditem"> <br>
+            <a href="" class="clo1" id="link2">Skin Care </a>
+        </div>
+        <div id="shoe">
+            <img src="shoee.png" alt="" id="imgc" class="griditem"> <br>
+            <a href="" class="clo1" id="link3">Footware </a>
+        </div>
+        <div id="jwell" class="griditem">
+            <img src="jwell.png" alt="" id="imgc"> <br>
+            <a href="" class="clo1" id="link4">Accessories </a>
+        </div>
+
+    </div>
+    <!-------------------------------------------------------------------------------->
+
+
+
+
+
+
+    <!--..................................Recommendation............................... -->
+    <div id="Recommendation">
+        <h1>Some Recommendation</h1>
+        <div class="div">
+            <div id="divitem1">
+                <a href=""><img src="clothbagg.png" alt="" id="clothbag"></a>
+            </div>
+            <div id="divitem2">
+                <h3>USE CLOTH BAG INSTEAD OF PLASTIC BAG</h3>
+                <p>1)Plastic bags take hundreds of years to decompose and often end up polluting oceans and harming
+                    wildlife.Using a reusable bag reduces this plastic waste. <br>
+                    2)Unlike flimsy plastic bags, reusable bags are strong and less likely to tear, making them ideal
+                    for carrying heavy or bulky items. <br> <br> <br>
+                    Switching to reusable bags is a simple yet effective way to reduce plastic use and contribute to
+                    environmental sustainability.
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="divv">
+            <div id="divvitem2">
+                <h3> Replace plastic toothbrushes with biodegradable bamboo options</h3>
+                <p>1)The bamboo handle decomposes naturally over time, reducing landfill waste.unlike plastic that can
+                    take centuries to decompose. <br>
+                    2)Bamboo grows quickly, requires minimal resources to cultivate, and doesn’t need pesticides or
+                    fertilizers, making it a highly sustainable plant material. <br> <br> <br>
+                    Bamboo toothbrushes are an eco-friendly alternative to plastic toothbrushes. They feature handles
+                    made from bamboo, a fast-growing, renewable resource that’s biodegradable. Unlike conventional
+                    plastic toothbrushes that contribute to landfill waste and ocean pollution, bamboo toothbrushes
+                    offer a more sustainable option for oral care.
+                </p>
+            </div>
+            <div id="divvitem1">
+                <a href=""><img src="bamboo tooth brush.png" alt="" id="clothbag"></a>
+            </div>
+        </div>
+
+
+
+        <div class="div">
+            <div id="divitem1">
+                <a href=""><img src="towels.png" alt="" id="clothbag"></a>
+            </div>
+            <div id="divitem2">
+                <h3> Swap paper towels with washable cloth options.</h3>
+                <p>1) Switching to cloth napkins significantly cuts down the waste created by single-use paper napkins
+                    or towels. This helps to save trees and reduce landfill waste. <br>
+                    2)While the upfront cost of cloth napkins and towels may be higher than buying paper products, they
+                    save money over time, as they can be reused for months or even years.<br> <br> <br>
+
+                    Cloth napkins and towels are reusable alternatives to disposable paper napkins and towels. They are
+                    typically made from durable fabrics like cotton, linen, or microfiber and can be washed and reused
+                    multiple times, reducing the need for single-use paper products.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ...........................................................................................................................  -->
+
+    <!-- .......................................ngo...............................................    -->
+
+
+    <div id="ngo">
+        
+        <div >
+           <h1 style="padding-top: 50px; margin-right: 800px; margin-left: 30px;" > "Join hands with us to create a brighter tomorrow—because every small action can spark big change".</h1>
+            <div style="padding-top: 50px;">
+                <span style="margin-left: 30px; ;"> Support <b> GreenWave Initiative</b> </span>
+                <div style="padding-top: 200px;">   
+                <a href="ngo.html" class="ngolink" id="ngol1" >KNOW MORE</a> 
+                <a href="" class="ngolink" >TO DONATE</a> 
+                <a href="" class="ngolink" >JOIN US</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+<!-- .......................................................................................................... -->
+<div id="y">
+    <label for="text" style="font-size: 30px;">ADD SOME SUGGESTIONS:😀</label>  <br> <br>
+    <textarea name="" id="text" title="add some suggestion" placeholder="Add your text here....."></textarea> <br> <br>
+    <input type="submit">
+</div>
+
+
+
+
+
+
+
+
+
+    <!----------------------------------- last part--------------------------------->
+    <div id="last">
+
+        <a href="">
+            <img src="insta.png" alt="" id="insta" height="50" width="50" title="Follow us on Instagram"> </a>
+
+        <a href="">
+            <img src="whatsapp.png" alt="" id="insta" height="50" width="50" title="Join our Whatsapp group"></a>
+
+        <a href="">
+            <img src="facebook.png" alt="" id="insta" height="50" width="50" title="Follow us on facebook"></a>
+
+        <a href="">
+            <img src="message.png" alt="" id="insta" height="50" width="50" title="Message"></a>
+    </div>
+    <!-- ------------------------------------------------------------------------>
+
+
+
+
+
+
+
+</body>
+
+</html>
